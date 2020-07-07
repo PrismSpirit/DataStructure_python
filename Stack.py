@@ -1,18 +1,24 @@
 class Stack:
     def __init__(self):
-        pass
+        self.l = list()
 
     def size(self):
-        pass
+        return len(self.l)
 
     def isEmpty(self):
-        pass
+        if len(self.l) == 0:
+            return False
+        else:
+            return True
 
     def push(self, e):
-        pass
+        self.l.append(e)
 
     def top(self):
-        pass
+        return self.l[-1]
 
     def pop(self):
-        pass
+        if self.isEmpty() == False:
+            return None
+        else:
+            return self.l.pop()
